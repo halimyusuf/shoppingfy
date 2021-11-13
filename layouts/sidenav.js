@@ -28,47 +28,47 @@ export default function Sidenav() {
         display: "flex",
         alignItems: "center",
         justifyContent: "space-between",
-        padding: "20px 0",
+        padding: "30px 0",
         flexDirection: "column",
         boxSizing: "border-box",
       }}
     >
-      <Box
-        sx={{
-          background: "#3F3D56",
-          width: "40px",
-          height: "40px",
-          borderRadius: "50%",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-        }}
-      >
-        <FavoriteIcon sx={{ color: "#F9A109" }} />
-      </Box>
-
+      <Link href="/" passHref>
+        <Box
+          sx={{
+            background: "#3F3D56",
+            width: "40px",
+            height: "40px",
+            borderRadius: "50%",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          <FavoriteIcon sx={{ color: "#F9A109" }} />
+        </Box>
+      </Link>
       <Box sx={{ alignContent: "center" }}>
         {midIcons.map((m, i) => (
           <SidenavMideIcon key={i} Icon={m.icon} isCurrent={current === i} />
         ))}
       </Box>
-
-      <Box
-        sx={{
-          background: "#F9A109",
-          width: "40px",
-          height: "40px",
-          borderRadius: "50%",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          cursor: "pointer",
-        }}
-      >
-        <Link href="/shopping/cart" passHref>
+      <Link href="/shopping/cart" passHref>
+        <Box
+          sx={{
+            background: "#F9A109",
+            width: "40px",
+            height: "40px",
+            borderRadius: "50%",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            cursor: "pointer",
+          }}
+        >
           <AddShoppingCartIcon sx={{ color: "#fff" }} />
-        </Link>
-      </Box>
+        </Box>
+      </Link>
     </Box>
   );
 }
