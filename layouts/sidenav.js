@@ -23,6 +23,7 @@ export default function Sidenav() {
         position: "fixed",
         backgroundColor: "#fff",
         height: "100vh",
+        maxHeight: "100vh",
         width: "65px",
         display: "flex",
         alignItems: "center",
