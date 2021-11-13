@@ -37,7 +37,10 @@ export default function ShoppingCart() {
               }}
             >
               <Box
-                sx={{ padding: "0 10px 100px 0", transform: "rotate(-15deg)" }}
+                sx={{
+                  paddingRight: "25px",
+                  transform: "rotate(-15deg)",
+                }}
               >
                 <Image
                   src="/wine-bottle.png"
