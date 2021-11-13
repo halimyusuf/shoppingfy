@@ -22,8 +22,9 @@ export default function Sidenav() {
       sx={{
         position: "fixed",
         backgroundColor: "#fff",
-        height: "100vh",
-        maxHeight: "100vh",
+        // height: "100vh",
+        // maxHeight: "100vh",
+        height: "fill-available",
         width: "65px",
         display: "flex",
         alignItems: "center",
