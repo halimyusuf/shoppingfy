@@ -1,9 +1,12 @@
 import { Box, Container, Input } from "@mui/material";
 import Image from "next/image";
 import styles from "../styles/shopping.cart.module.css";
+import CreateIcon from "@mui/icons-material/Create";
+import { shoppingCartDefault } from "../static/shopping.cart";
 
 export default function ShoppingCart() {
   const active = true;
+  // console.log(shoppingCartDefault);
   return (
     <>
       <Box
@@ -70,8 +73,32 @@ export default function ShoppingCart() {
                 </Box>
               </Box>
             </Box>
+            <Box sx={{ margin: "15px 30px" }}>
+              <Box
+                sx={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  alignItems: "center",
+                  height: "100%",
+                }}
+              >
+                <Box
+                  sx={{
+                    fontWeight: "bold",
+                    fontSize: "22px",
+                    lineHeight: "30px",
+                    color: "#34333A",
+                  }}
+                >
+                  Shopping List
+                </Box>
+                <Box sx={{ marginTop: "8px" }}>
+                  <CreateIcon sx={{ fontSize: 22, color: "#34333A" }} />
+                </Box>
+              </Box>
+            </Box>
           </Box>
-          <Box>No items</Box>
+          <Box sx={{ margin: "20px 0" }}>No items</Box>
           <Box sx={{ width: "fit-content" }}>
             <Image
               src="/shopping-cart-human.svg"
