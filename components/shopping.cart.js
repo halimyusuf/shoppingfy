@@ -11,7 +11,7 @@ export default function ShoppingCart() {
           background: "#FFF0DE",
           maxWidth: "100%",
           height: "calc(100vh - 120px)",
-          padding: "1vh 0",
+          padding: "2vh 0",
         }}
       >
         <Box
@@ -35,11 +35,13 @@ export default function ShoppingCart() {
                 justifyContent: "space-between",
               }}
             >
-              <Box sx={{ padding: "0 10px 100px 0" }}>
+              <Box
+                sx={{ padding: "0 10px 100px 0", transform: "rotate(-15deg)" }}
+              >
                 <Image
-                  src="/wine_bottle.png"
-                  width="55"
-                  height="120"
+                  src="/wine-bottle.png"
+                  width="40"
+                  height="115"
                   alt="Wine bottle"
                   quality="original"
                 />
