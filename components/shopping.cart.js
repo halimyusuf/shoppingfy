@@ -26,6 +26,7 @@ export default function ShoppingCart() {
           <Box sx={{ width: "300px" }}>
             <Box
               sx={{
+                margin: "0 20px",
                 background: "#80485B",
                 height: "135px",
                 borderRadius: "24px",
