@@ -20,23 +20,25 @@ export default function ShoppingCart() {
             display: "flex",
             flexDirection: "column",
             justifyContent: "space-between",
+            alignItems: "center",
           }}
         >
-          <Box sx={{ width: "300px", margin: "auto" }}>
+          <Box sx={{ width: "300px" }}>
             <Box
               sx={{
                 background: "#80485B",
-                height: "130px",
+                height: "135px",
                 borderRadius: "24px",
                 padding: "15px 20px",
                 color: "#fff",
                 display: "flex",
+                justifyContent: "space-between",
               }}
             >
-              <Box>
+              <Box sx={{ padding: "0 10px 100px 0" }}>
                 <Image
-                  src="/wine-bottle.png"
-                  width="64"
+                  src="/wine_bottle.png"
+                  width="55"
                   height="120"
                   alt="Wine bottle"
                   quality="original"
@@ -63,7 +65,8 @@ export default function ShoppingCart() {
               </Box>
             </Box>
           </Box>
-          <Box sx={{ width: "fit-content", margin: "auto" }}>
+          <Box>No items</Box>
+          <Box sx={{ width: "fit-content" }}>
             <Image
               src="/shopping-cart-human.svg"
               width={300}
