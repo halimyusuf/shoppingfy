@@ -1,0 +1,12 @@
+.inputCont input {
+  width: 100%;
+  border: 2px solid #c1c1c4;
+  box-sizing: border-box;
+  border-radius: 12px;
+  padding: 15px 75px 15px 21px;
+}
+
+.inputActive input {
+  outline-color: #f9a109;
+  border: 2px solid #f9a109;
+}
